@@ -1,0 +1,54 @@
+.App {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hambMenu {
+  /*  hambMenu its  a div and hambMenuId specific on the icon*/
+  /* visibility: hidden; */
+  /* display: none; */
+  color: #fff;
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+#hambMenuId {
+  display: none;
+}
+.container {
+  min-width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  background-color: #1b242f;
+}
+
+.container-item {
+  color: #fff;
+  list-style-type: none;
+  text-decoration-line: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    border: 2px black solid;
+    min-height: 60px;
+    background-color: #1b242f;
+    display: block;
+  }
+  .container .container-item {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: block;
+    min-height: 40px;
+  }
+
+  #hambMenuId {
+    display: unset;
+  }
+}
